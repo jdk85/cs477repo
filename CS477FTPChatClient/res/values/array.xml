@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="updateInterval">
+        <item name="1000">Every 1 second</item>
+        <item name="5000">Every 5 seconds</item>
+        <item name="30000">Every 30 seconds</item>
+        <item name="60000">Every 1 minute</item>
+        <item name="300000">Every 5 minutes</item>
+    </string-array>
+    
+    <string-array name="updateIntervalValues">
+        <item name="1000">1000</item>
+        <item name="5000">5000</item>
+        <item name="30000">30000</item>
+        <item name="60000">60000</item>
+        <item name="300000">300000</item>
+    </string-array>
+    <string-array name="friendList">
+        <item name="Sam">Allow Sam</item>
+        <item name="Bob">Allow Bob</item>
+    </string-array>
+    <string-array name="friendlistValues">
+        <item name="Sam">Bob</item>
+        <item name="Bob">Sam</item>
+    </string-array>
+    
+    <string-array name="chatColors">
+        <item name="Red">Red</item>
+        <item name="Black">Black</item>
+        <item name="Blue">Blue</item>
+    </string-array>
+    
+    <string-array name="fontSize">
+        <item name="10">10 PT</item>
+        <item name="12">12 PT</item>
+        </string-array>
+
+</resources>
