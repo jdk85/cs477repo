@@ -17,8 +17,6 @@
 package edu.nau.CS477.Classes;
 
 
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
