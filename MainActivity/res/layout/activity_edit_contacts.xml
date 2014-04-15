@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.nau.CS477.Contacts.NewContactActivity"
+    tools:ignore="MergeRootFrame" >
+	
+	    <TextView
+	        android:id="@+id/firstNameText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="18dp"
+	        android:layout_marginTop="24dp"
+	        android:text="First Name" />
+	 
+	    <EditText
+	        android:id="@+id/firstNameEdit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/firstNameText"
+	        android:ems="10" android:inputType="text"/>
+	 
+	    <TextView
+	        android:id="@+id/lastNameText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/firstNameText"
+	        android:layout_below="@+id/firstNameEdit"
+	        android:layout_marginTop="26dp"
+	        android:text="Last Name" />
+	 
+	    <EditText
+	        android:id="@+id/lastNameEdit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/lastNameText"
+	        android:ems="10" android:inputType="text"/>
+	 
+	    <TextView
+	        android:id="@+id/emailText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/lastNameText"
+	        android:layout_below="@+id/lastNameEdit"
+	        android:layout_marginTop="19dp"
+	        android:text="Email Address" />
+	    <EditText
+	        android:id="@+id/emailEdit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/emailText"
+	        android:ems="10" 
+	        android:inputType="text"/>
+	    
+	    <TextView
+	        android:id="@+id/ipText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/emailText"
+	        android:layout_below="@+id/emailEdit"
+	        android:layout_marginTop="19dp"
+	        android:text="IP Address" />
+	    
+	    <EditText
+	        android:id="@+id/ipEdit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/ipText"
+	        android:ems="10" 
+	        android:inputType="text"/>
+	    <Button
+	        android:id="@+id/updateIP"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/ipEdit"
+	        android:text="Refresh IP"/>
+
+    
+<RelativeLayout 
+    android:id="@+id/bottomButtons"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"    
+    >
+    <Button
+        android:id="@+id/SubmitBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="Update" />
+    <Button
+        android:id="@+id/CancelBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SubmitBtn"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:text="Cancel" />
+</RelativeLayout>
+    
+</RelativeLayout>
