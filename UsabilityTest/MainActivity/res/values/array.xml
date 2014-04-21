@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    
+   <string-array name="friendList">
+        <item name="Brandon">Allow Brandon</item>
+         <item name="Ben">Allow Ben</item>
+          <item name="Mike">Allow Mike</item>
+    </string-array>
+    <string-array name="friendlistValues">
+        <item name="JD">JD</item>
+        <item name="Brandon">Brandon</item>
+        <item name="Ben">Ben</item>
+        <item name="Mike">Mike</item>
+    </string-array>
+    
+    <string-array name="chatColors">
+        <item name="Red">Red</item>
+        <item name="Black">Black</item>
+        <item name="Blue">Blue</item>
+    </string-array>
+    
+    <string-array name="fontSize">
+        <item name="10">10 PT</item>
+        <item name="12">12 PT</item>
+        </string-array>
+
+
+</resources>

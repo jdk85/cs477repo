@@ -1,0 +1,46 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	
+
+    <TextView
+        android:id="@+id/transfer_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Date - Time"/>
+	<TextView
+        android:id="@+id/transfer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/transfer_date_time"
+        android:text="contact"/>
+		<TextView
+        android:id="@+id/transfer_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/transfer_name"
+        android:text="filename"/>
+    <ProgressBar
+        android:id="@+id/transfer_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="16dp"
+        android:layout_below="@+id/transfer_file" />
+
+</RelativeLayout>

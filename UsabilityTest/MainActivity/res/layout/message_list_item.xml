@@ -1,0 +1,50 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+	<LinearLayout android:id="@+id/chat_thumbnail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"
+        android:layout_alignParentLeft="true"
+	    android:layout_marginRight="5dip">
+
+		<ImageView
+			android:id="@+id/chat_image"
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:background="#666666"
+	        android:src="@drawable/gnome_stock_person"/>
+
+	</LinearLayout>
+	
+
+    <TextView
+        android:id="@+id/chat_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chat_thumbnail"
+        android:layout_toRightOf="@+id/chat_thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="Date - Time"/>
+
+    <TextView
+        android:id="@+id/chat_message_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_date_time"
+        android:textColor="#343434"
+        android:textSize="20sp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/chat_thumbnail" 
+        android:text="message content"/>
+
+
+    
+
+</RelativeLayout>

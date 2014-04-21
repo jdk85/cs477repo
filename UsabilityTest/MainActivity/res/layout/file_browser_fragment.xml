@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context="com.TeamCCC.ftpchatclient.ScreenDetailFragment" >
+
+    <TextView
+        android:id="@+id/textViewChooseFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="Click to Choose File:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/fileSelectionIcon"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_weight="0.85"
+        
+        android:padding="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/folder_icon" />
+
+    <LinearLayout
+        android:id="@+id/FileSendWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="#333333"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/FileSendTo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="File:"
+            android:textColor="#ffffff"
+            android:paddingRight="10dp"
+            android:textAlignment="inherit"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewFileSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Choose a file first"
+            android:textAlignment="inherit"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!-- 
+    <LinearLayout
+      android:id="@+id/ChatMessageInput"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#333333"
+      android:gravity="bottom"
+      android:minHeight="60dp"
+      android:orientation="horizontal"
+      android:paddingBottom="5dp"
+      android:paddingTop="10dp" >
+      
+      -->
+    <LinearLayout
+        android:id="@+id/FileTransferWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#333333"
+        android:gravity="bottom"
+        android:minHeight="60dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:id="@+id/FileToSendHelper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:text="To:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewNameSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Select Contact"
+            android:padding="5dp"
+            android:scrollHorizontally="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/SendFileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+   
+
+</LinearLayout>

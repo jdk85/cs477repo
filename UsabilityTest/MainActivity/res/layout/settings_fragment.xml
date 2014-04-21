@@ -1,0 +1,64 @@
+
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory
+        android:title="Private Privledges"
+        android:key="private_priveledges">
+        
+        <CheckBoxPreference
+            android:key="allow_all"
+            android:summary="Allow all friends private folder access"
+            android:title="Allow All"
+            android:defaultValue="false"
+            />
+       
+        <MultiSelectListPreference
+            android:key="allow_friends"
+        	android:title="Allow Friends"
+        	android:summary="Set friends who have access to private folder"
+        	android:entries="@array/friendList"
+        	android:entryValues="@array/friendList"
+        />
+        
+        <Preference
+            android:key="deleteContacts"
+            android:summary="Deletes All contatcts!"
+            android:title="Delete Contacts" />
+        
+    </PreferenceCategory>
+        
+         
+    <PreferenceCategory
+        android:title="Chat Options"
+        android:key="chat_options">
+        
+        <ListPreference
+            android:key="text_color"
+            android:title="Text Color"
+            android:summary="Change the color of the chat text "
+            android:entries= "@array/chatColors"
+            android:entryValues= "@array/chatColors"
+            android:defaultValue= "Black"  />
+        
+        <ListPreference
+            android:key="font_size"
+            android:title="Font Size"
+            android:summary="Change the size of the chat text"
+            android:entries="@array/fontSize"
+            android:entryValues="@array/fontSize" />
+        
+        
+        <Preference
+            android:key="deleteMessages"
+            android:summary="Deletes all messages"
+            android:title="Delete Messages" />
+        
+        </PreferenceCategory>
+        
+</PreferenceScreen>
+
+
+
+
