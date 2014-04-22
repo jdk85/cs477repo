@@ -50,10 +50,7 @@ public class NewContactActivity extends Activity {
             	    public void onClick(DialogInterface dialog, int which) {
             	        switch (which){
             	        case DialogInterface.BUTTON_POSITIVE:
-            	        	EditText mFirstNameEdit = (EditText)findViewById(R.id.firstNameEdit);
-                        	EditText mLastNameEdit = (EditText)findViewById(R.id.lastNameEdit);
-                        	EditText mEmailEdit  = (EditText)findViewById(R.id.emailEdit);
-                        	ContactObject co  = new ContactObject(mFirstNameEdit.getText().toString(),mLastNameEdit.getText().toString(),mEmailEdit.getText().toString());
+            	        	                        	
                         	db = new ContactsDatabaseHandler(NewContactActivity.this);
                         	db.addContact(co);
                         	db.close();
@@ -67,7 +64,10 @@ public class NewContactActivity extends Activity {
             	    }
             	};
             	AlertDialog.Builder builder = new AlertDialog.Builder(NewContactActivity.this);
-            	
+            	EditText mFirstNameEdit = (EditText)findViewById(R.id.firstNameEdit);
+            	EditText mLastNameEdit = (EditText)findViewById(R.id.lastNameEdit);
+            	EditText mEmailEdit  = (EditText)findViewById(R.id.emailEdit);
+            	co  = new ContactObject(mFirstNameEdit.getText().toString(),mLastNameEdit.getText().toString(),mEmailEdit.getText().toString());
             	builder.setMessage("Create " + co.getFullName() + "?").setPositiveButton("Update", dialogClickListener)
             	    .setNegativeButton("Cancel", dialogClickListener).show();
  
